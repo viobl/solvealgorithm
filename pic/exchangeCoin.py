@@ -12,7 +12,7 @@ def DFS(L, sum):
             res = L
     else:
         for i in range(n):
-            DFS(L + 1, sum + a[i])
+            DFS(L + 1, sum + a[i]) # 동전 하나씩 추가
 
 
 n = int(input())
@@ -20,7 +20,7 @@ a = list(map(int, input().split()))
 m = int(input())
 res = 2147000000
 
-a.sort(reverse=True)
+a.sort(reverse=True) # 큰 것부터 적용하면서 내려가기 위해
 DFS(0, 0)
 print(res)
 
