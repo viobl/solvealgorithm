@@ -9,7 +9,7 @@ Q.append((0, 0))
 board[0][0] = 1
 
 while Q:
-    tmp = Q.popleft() #
+    tmp = Q.popleft()
     for i in range(4):
         x = tmp[0] + dx[i]
         y = tmp[1] + dy[i]
