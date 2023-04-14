@@ -31,5 +31,4 @@ for _ in range(t):
             if board[i][j] == 1:
                 bfs(i, j)
                 cnt += 1
-    print(board, end='\n')
     print(cnt)
