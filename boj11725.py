@@ -1,6 +1,6 @@
 # 트리의 부모 찾기
 import sys
-sys.setrecursionlimit(10**6)
+sys.setrecursionlimit(10 ** 6)
 input = sys.stdin.readline
 
 n = int(input())
