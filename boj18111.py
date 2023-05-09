@@ -8,13 +8,13 @@ input = sys.stdin.readline
 n, m, b = map(int, input().split())
 graph = [list(map(int, input().split())) for _ in range(n)]
 
-res = sys.maxsize
+res = 2147000000
 idx = 0
 
 # 0 ~ 256까지 반복
 for x in range(257):
-    maxS, minS = 0, 0
-
+    maxS = 0
+    minS = 0
     for i in range(n):
         for j in range(m):
             # 블록 >= 층
